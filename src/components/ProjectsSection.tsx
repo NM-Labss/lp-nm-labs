@@ -1,7 +1,7 @@
 import { Container } from "./ui/Container";
 import { Section } from "./ui/Section";
 import { Button } from "./ui/Button";
-import Image from "next/image";
+// import Image from "next/image";
 
 export function ProjectsSection() {
   const projects = [

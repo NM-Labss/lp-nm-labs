@@ -21,21 +21,24 @@ export function TestimonialsSection() {
   ];
 
   return (
-    <Section>
+    <Section className="bg-white dark:bg-gray-800">
       <Container>
-        <h2 className="text-2xl font-bold mb-10 text-center">Apa Kata Anggota Kami</h2>
+        <h2 className="text-2xl font-bold mb-10 text-center">Testimoni Anggota</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+            <div key={index} className="bg-gray-50 dark:bg-gray-900 p-6 rounded-lg">
               <div className="mb-4">
-                <svg className="h-8 w-8 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
               </div>
-              <p className="text-gray-600 dark:text-gray-400 mb-4 italic">"{testimonial.quote}"</p>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                {/* Fix unescaped quotes */}
+                {testimonial.quote}
+              </p>
               <div>
                 <p className="font-semibold">{testimonial.author}</p>
-                <p className="text-sm text-gray-500 dark:text-gray-500">{testimonial.role}</p>
+                <p className="text-gray-500 dark:text-gray-500 text-sm">{testimonial.role}</p>
               </div>
             </div>
           ))}
