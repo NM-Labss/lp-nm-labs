@@ -3,6 +3,7 @@
 import { Container } from "./ui/Container";
 import { Section } from "./ui/Section";
 import { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 
 export function TestimonialsSection() {
   // Gunakan satu URL gambar dari Unsplash untuk semua anggota
@@ -117,10 +118,12 @@ export function TestimonialsSection() {
               >
                 <div className="bg-gray-50 dark:bg-gray-900 rounded-lg overflow-hidden h-full">
                   <div className="h-48 relative">
-                    <img 
+                    <Image 
                       src={member.image} 
                       alt={member.name} 
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                   <div className="p-6 flex flex-col h-[calc(100%-12rem)]">

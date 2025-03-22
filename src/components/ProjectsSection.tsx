@@ -33,10 +33,12 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <div key={index} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="h-48 relative">
-                <img 
+                <Image 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover" 
+                  className="object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <div className="p-6">
