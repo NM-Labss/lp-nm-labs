@@ -23,9 +23,9 @@ export function FeaturesSection() {
         <h2 className="text-2xl font-bold mb-10 text-center">Kegiatan Kami</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="p-6 border border-gray-200 dark:border-gray-800 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-              <p className="text-gray-600 dark:text-gray-400">{feature.description}</p>
+            <div key={index} className="p-6 border border-[var(--border-color)] rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-[var(--text-primary)]">{feature.title}</h3>
+              <p className="text-[var(--text-secondary)]">{feature.description}</p>
             </div>
           ))}
         </div>

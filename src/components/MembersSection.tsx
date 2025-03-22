@@ -94,7 +94,7 @@ export function MembersSection() {
       ].filter(Boolean);
 
   return (
-    <Section className="py-20 bg-white dark:bg-gray-800" id="anggota">
+    <Section className="py-20 bg-[var(--background)]" id="anggota">
       <Container>
         <h2 className="text-2xl font-bold mb-10 text-center">Anggota Inti NM Labs</h2>
         
@@ -102,7 +102,7 @@ export function MembersSection() {
           {/* Navigation buttons */}
           <button 
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-gray-800 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--background)] rounded-full p-2 shadow-md hover:bg-[var(--hover-bg)]"
             aria-label="Previous members"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +112,7 @@ export function MembersSection() {
           
           <button 
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-gray-800 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--background)] rounded-full p-2 shadow-md hover:bg-[var(--hover-bg)]"
             aria-label="Next members"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +128,7 @@ export function MembersSection() {
                 className="member-card flex-shrink-0 w-full max-w-xs"
                 style={{ width: '100%', maxWidth: '320px', height: '480px' }}
               >
-                <div className="bg-gray-50 dark:bg-gray-900 rounded-lg overflow-hidden h-full">
+                <div className="bg-[var(--card-bg)] rounded-lg overflow-hidden h-full">
                   <div className="h-48 relative">
                     <Image 
                       src={member.image} 
@@ -139,10 +139,10 @@ export function MembersSection() {
                     />
                   </div>
                   <div className="p-6 flex flex-col h-[calc(100%-12rem)]">
-                    <h3 className="text-xl font-semibold">{member.name}</h3>
-                    <p className="text-indigo-600 dark:text-indigo-400 font-medium mb-2">{member.role}</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">Keahlian: {member.expertise}</p>
-                    <p className="text-gray-600 dark:text-gray-300 flex-grow">{member.description}</p>
+                    <h3 className="text-xl font-semibold text-[var(--text-primary)]">{member.name}</h3>
+                    <p className="text-[var(--primary)] font-medium mb-2">{member.role}</p>
+                    <p className="text-sm text-[var(--text-tertiary)] mb-3">Keahlian: {member.expertise}</p>
+                    <p className="text-[var(--text-secondary)] flex-grow">{member.description}</p>
                   </div>
                 </div>
               </div>

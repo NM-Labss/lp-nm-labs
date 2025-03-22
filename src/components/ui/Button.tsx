@@ -17,8 +17,8 @@ export function Button({
   const baseStyles = "rounded-md transition-colors flex items-center justify-center font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5";
   
   const variantStyles = {
-    primary: "bg-[#2E236C] text-white hover:bg-[#2d3a31]",
-    secondary: "border-2 border-solid border-[#f8f8f8] text-[#f8f8f8] hover:bg-[#252525]"
+    primary: "bg-[var(--primary)] text-white hover:bg-[var(--primary-hover)]",
+    secondary: "border-2 border-solid border-[var(--secondary)] text-[var(--secondary)] hover:bg-[var(--secondary-hover)]"
   };
   
   const buttonClasses = `${baseStyles} ${variantStyles[variant]} ${className}`;

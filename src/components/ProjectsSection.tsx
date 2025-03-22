@@ -26,12 +26,12 @@ export function ProjectsSection() {
   ];
 
   return (
-    <Section className="py-20 bg-gray-50 dark:bg-gray-900" id="proyek">
+    <Section className="py-20 bg-[var(--card-bg)]" id="proyek">
       <Container>
         <h2 className="text-2xl font-bold mb-10 text-center">Proyek Terbaru</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div key={index} className="bg-[var(--background)] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="h-48 relative">
                 <Image 
                   src={project.image} 
@@ -42,8 +42,8 @@ export function ProjectsSection() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-[var(--text-primary)]">{project.title}</h3>
+                <p className="text-[var(--text-secondary)] mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, tagIndex) => (
                     <span key={tagIndex} className="text-xs bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">
