@@ -8,10 +8,10 @@ export function AboutSection() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold mb-6 text-center">Tentang Kami</h2>
           <div className="prose dark:prose-invert">
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               NM Labs adalah komunitas mahasiswa Teknik Komputer di Institut Teknologi Del yang berfokus pada pengembangan keterampilan praktis dan kolaborasi dalam bidang teknologi komputer.
             </p>
-            <p>
+            <p className="text-justify">
               Kami mengadakan workshop, proyek kolaboratif, dan kegiatan belajar bersama untuk meningkatkan kemampuan anggota dalam bidang hardware, embedded systems, dan teknologi terkini.
             </p>
           </div>

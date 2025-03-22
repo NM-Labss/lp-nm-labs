@@ -58,8 +58,8 @@ export function ProjectsSection() {
             </div>
           ))}
         </div>
-        <div className="mt-10 text-center">
-          <Button href="#" variant="primary">
+        <div className="mt-10 flex justify-center">
+          <Button href="#" variant="primary" className="px-4 py-2 text-xs h-8 w-48">
             Lihat Semua Proyek
           </Button>
         </div>
