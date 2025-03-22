@@ -1,26 +1,26 @@
 import { Container } from "./ui/Container";
 import { Section } from "./ui/Section";
 import { Button } from "./ui/Button";
-// import Image from "next/image";
+import Image from "next/image";
 
 export function ProjectsSection() {
   const projects = [
     {
       title: "Smart Home System",
       description: "Sistem rumah pintar berbasis IoT dengan kontrol melalui aplikasi mobile",
-      image: "/images/project1.jpg", // Tambahkan gambar proyek
+      image: "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       tags: ["IoT", "Mobile App", "Embedded Systems"]
     },
     {
       title: "Autonomous Robot",
       description: "Robot otonom dengan kemampuan navigasi dan penghindaran rintangan",
-      image: "/images/project2.jpg", // Tambahkan gambar proyek
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       tags: ["Robotics", "Computer Vision", "AI"]
     },
     {
       title: "Weather Monitoring Station",
       description: "Stasiun pemantau cuaca dengan sensor suhu, kelembaban, dan tekanan udara",
-      image: "/images/project3.jpg", // Tambahkan gambar proyek
+      image: "https://images.unsplash.com/photo-1527482797697-8795b05a13fe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       tags: ["Sensors", "Data Analysis", "Web Dashboard"]
     }
   ];
@@ -33,16 +33,11 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <div key={index} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="h-48 relative">
-                <div className="absolute inset-0 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-                  <span className="text-gray-400 dark:text-gray-500">Image Placeholder</span>
-                </div>
-                {/* Uncomment when you have actual images */}
-                {/* <Image 
+                <img 
                   src={project.image} 
                   alt={project.title} 
-                  fill 
-                  className="object-cover" 
-                /> */}
+                  className="w-full h-full object-cover" 
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>

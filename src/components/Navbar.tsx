@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Container } from "./ui/Container";
 import { useState, useEffect } from "react";
-import { ThemeToggle } from "./ui/ThemeToggle";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +27,6 @@ export function Navbar() {
           
           {/* Mobile menu button */}
           <div className="flex items-center gap-2 md:gap-4">
-            <ThemeToggle />
             <button 
               className="md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -51,7 +49,6 @@ export function Navbar() {
             <Link href="#kegiatan" className="hover:opacity-70">Kegiatan</Link>
             <Link href="#proyek" className="hover:opacity-70">Proyek</Link>
             <Link href="#kontak" className="hover:opacity-70">Kontak</Link>
-            <ThemeToggle />
           </div>
         </div>
       </Container>
