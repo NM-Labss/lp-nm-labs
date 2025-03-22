@@ -3,11 +3,12 @@ import { ReactNode } from "react";
 interface SectionProps {
   children: ReactNode;
   className?: string;
+  id?: string; // Tambahkan id sebagai prop opsional
 }
 
-export function Section({ children, className = "" }: SectionProps) {
+export function Section({ children, className = "", id }: SectionProps) {
   return (
-    <section className={`py-12 sm:py-16 ${className}`}>
+    <section className={className} id={id}>
       {children}
     </section>
   );

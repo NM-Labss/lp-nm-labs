@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Container } from "./ui/Container";
 import { useState, useEffect } from "react";
 
@@ -19,11 +18,32 @@ export function Navbar() {
     };
   }, [isMenuOpen]);
 
+  const scrollToSection = (sectionId: string) => {
+    setIsMenuOpen(false);
+    
+    // Simple direct approach with console logging for debugging
+    console.log(`Attempting to scroll to section: ${sectionId}`);
+    const element = document.getElementById(sectionId);
+    console.log(`Found element:`, element);
+    
+    if (element) {
+      const navbarHeight = 80; // navbar height
+      const y = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
+      console.log(`Scrolling to position: ${y}`);
+      window.scrollTo({top: y, behavior: 'smooth'});
+    }
+  };
+
   return (
-    <nav className="py-4 border-b border-[var(--border-color)]">
+    <nav className="py-4 border-b border-[var(--border-color)] fixed top-0 left-0 right-0 bg-[var(--background)] z-40">
       <Container>
         <div className="flex justify-between items-center">
-          <Link href="/" className="font-bold text-xl">NM Labs</Link>
+          <button 
+            onClick={() => scrollToSection("home")} 
+            className="font-bold text-xl"
+          >
+            NM Labs
+          </button>
           
           {/* Mobile menu button */}
           <div className="flex items-center gap-2 md:gap-4">
@@ -44,11 +64,11 @@ export function Navbar() {
           
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="hover:opacity-70">Beranda</Link>
-            <Link href="#about" className="hover:opacity-70">Tentang</Link>
-            <Link href="#kegiatan" className="hover:opacity-70">Kegiatan</Link>
-            <Link href="#proyek" className="hover:opacity-70">Proyek</Link>
-            <Link href="#kontak" className="hover:opacity-70">Kontak</Link>
+            <button onClick={() => scrollToSection("home")} className="hover:opacity-70">Beranda</button>
+            <button onClick={() => scrollToSection("about")} className="hover:opacity-70">Tentang</button>
+            <button onClick={() => scrollToSection("kegiatan")} className="hover:opacity-70">Kegiatan</button>
+            <button onClick={() => scrollToSection("proyek")} className="hover:opacity-70">Proyek</button>
+            <button onClick={() => scrollToSection("kontak")} className="hover:opacity-70">Kontak</button>
           </div>
         </div>
       </Container>
@@ -77,41 +97,36 @@ export function Navbar() {
             </div>
             
             <div className="flex flex-col space-y-6">
-              <Link 
-                href="/" 
-                className="text-lg font-medium hover:opacity-70"
-                onClick={() => setIsMenuOpen(false)}
+              <button 
+                onClick={() => scrollToSection("home")}
+                className="text-lg font-medium hover:opacity-70 text-left"
               >
                 Beranda
-              </Link>
-              <Link 
-                href="#about" 
-                className="text-lg font-medium hover:opacity-70"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection("about")}
+                className="text-lg font-medium hover:opacity-70 text-left"
               >
                 Tentang
-              </Link>
-              <Link 
-                href="#kegiatan" 
-                className="text-lg font-medium hover:opacity-70"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection("kegiatan")}
+                className="text-lg font-medium hover:opacity-70 text-left"
               >
                 Kegiatan
-              </Link>
-              <Link 
-                href="#proyek" 
-                className="text-lg font-medium hover:opacity-70"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection("proyek")}
+                className="text-lg font-medium hover:opacity-70 text-left"
               >
                 Proyek
-              </Link>
-              <Link 
-                href="#kontak" 
-                className="text-lg font-medium hover:opacity-70"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection("kontak")}
+                className="text-lg font-medium hover:opacity-70 text-left"
               >
                 Kontak
-              </Link>
+              </button>
             </div>
           </div>
         </div>

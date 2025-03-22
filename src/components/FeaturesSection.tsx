@@ -18,7 +18,7 @@ export function FeaturesSection() {
   ];
 
   return (
-    <Section>
+    <Section className="py-20" id="kegiatan">
       <Container>
         <h2 className="text-2xl font-bold mb-10 text-center">Kegiatan Kami</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

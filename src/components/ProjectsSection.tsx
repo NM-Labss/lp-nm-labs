@@ -26,7 +26,7 @@ export function ProjectsSection() {
   ];
 
   return (
-    <Section className="bg-gray-50 dark:bg-gray-900" id="proyek">
+    <Section className="py-20 bg-gray-50 dark:bg-gray-900" id="proyek">
       <Container>
         <h2 className="text-2xl font-bold mb-10 text-center">Proyek Terbaru</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
