@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NM Labs - Komunitas Mahasiswa Teknik Komputer IT Del",
-  description: "Komunitas mahasiswa Teknik Komputer Institut Teknologi Del yang berfokus pada pengembangan keterampilan praktis dan kolaborasi",
+  title: "NM Labs | Pusat Keunggulan Teknologi Komputer IT Del",
+  description: "Komunitas inovatif mahasiswa Teknik Komputer Institut Teknologi Del yang menghubungkan pembelajaran akademis dengan kebutuhan industri melalui pengembangan proyek, riset kolaboratif, dan solusi teknologi terdepan.",
+  keywords: "teknologi komputer, embedded systems, IoT, robotika, komunitas mahasiswa, IT Del, riset kolaboratif, pengembangan profesional",
 };
 
 export default function RootLayout({

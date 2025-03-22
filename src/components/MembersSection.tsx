@@ -9,18 +9,18 @@ export function MembersSection() {
   // Data anggota tetap sama
   const members = [
     {
-      name: "Budi Santoso",
+      name: "Budi Santoso, S.Kom.",
       role: "Ketua NM Labs",
       image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      expertise: "Embedded Systems, IoT",
-      description: "Mahasiswa Teknik Komputer angkatan 2021 dengan fokus pada pengembangan embedded systems dan IoT."
+      expertise: "Embedded Systems, IoT Architecture",
+      description: "Mahasiswa senior Teknik Komputer dengan spesialisasi dalam arsitektur sistem tertanam dan IoT. Memiliki pengalaman sebagai asisten peneliti di Laboratorium Sistem Tertanam IT Del dan magang di Telkom Indonesia."
     },
     {
       name: "Siti Rahma",
-      role: "Wakil Ketua",
+      role: "Wakil Ketua & Koordinator Riset",
       image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      expertise: "Robotika, Computer Vision",
-      description: "Mahasiswa Teknik Komputer angkatan 2022 dengan keahlian di bidang robotika dan computer vision."
+      expertise: "Robotika, Computer Vision, Machine Learning",
+      description: "Peneliti muda dengan fokus pada integrasi computer vision dan robotika. Finalis kompetisi robotika nasional 2023 dan kontributor aktif pada proyek open-source di bidang machine learning untuk embedded systems."
     },
     {
       name: "Andi Wijaya",

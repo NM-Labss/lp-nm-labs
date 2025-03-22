@@ -5,18 +5,18 @@ export function HeroSection() {
   return (
     <Section className="py-20" id="home">
       <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-          Kembangkan Keterampilan Praktis dalam Teknologi Komputer
+        <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-[var(--text-primary)] tracking-tight leading-tight">
+          Membangun Masa Depan Teknologi Komputer Bersama NM Labs
         </h2>
-        <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-          Bergabunglah dengan komunitas mahasiswa yang bersemangat untuk belajar, berkolaborasi, dan menciptakan solusi inovatif.
+        <p className="text-lg sm:text-xl text-[var(--text-secondary)] mb-8 leading-relaxed max-w-2xl">
+          Komunitas inovatif yang menghubungkan mahasiswa Teknik Komputer IT Del dengan industri melalui pembelajaran berbasis proyek, riset kolaboratif, dan pengembangan solusi teknologi terdepan.
         </p>
         <div className="flex gap-4 flex-col sm:flex-row">
           <Button href="#" variant="primary">
-            Bergabung Sekarang
+            Bergabung dengan Komunitas
           </Button>
           <Button href="#" variant="secondary">
-            Lihat Proyek Kami
+            Eksplorasi Proyek
           </Button>
         </div>
       </div>

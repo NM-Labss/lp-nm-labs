@@ -16,7 +16,7 @@ export function ContactSection() {
             </div>
             <h3 className="text-xl font-semibold mb-4 text-[var(--text-primary)]">Gabung Discord NM Labs</h3>
             <p className="text-[var(--text-secondary)] mb-6 max-w-lg mx-auto">
-              Bergabunglah dengan channel Discord kami untuk diskusi, berbagi pengetahuan, dan mendapatkan informasi terbaru tentang kegiatan dan proyek NM Labs.
+              Bergabunglah dengan komunitas digital NM Labs untuk mengakses sumber daya eksklusif, berpartisipasi dalam diskusi teknis, dan terhubung dengan jaringan profesional mahasiswa, alumni, dan praktisi industri teknologi komputer.
             </p>
             <div className="flex justify-center">
               <Button 
