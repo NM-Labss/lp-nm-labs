@@ -1,16 +1,19 @@
 import { Container } from "./ui/Container";
 import { Section } from "./ui/Section";
+import { motion } from "framer-motion";
 
 interface StatProps {
   value: string;
   label: string;
+  icon?: React.ReactNode;
 }
 
-function Stat({ value, label }: StatProps) {
+function Stat({ value, label, icon }: StatProps) {
   return (
     <div className="text-center p-6">
       <div className="text-4xl font-bold mb-2 text-[var(--primary)]">{value}</div>
       <div className="text-sm text-[var(--text-secondary)]">{label}</div>
+      {icon && <div className="mt-2">{icon}</div>}
     </div>
   );
 }
