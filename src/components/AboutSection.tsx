@@ -3,7 +3,7 @@ import { Section } from "./ui/Section";
 
 export function AboutSection() {
   return (
-    <Section className="py-20 bg-[var(--card-bg)]" id="about">
+    <Section className="py-20 animated-gradient-bg" id="about">
       <Container>
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center text-[var(--text-primary)] tracking-tight">Tentang NM Labs</h2>

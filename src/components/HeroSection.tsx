@@ -1,10 +1,12 @@
 import { Button } from "./ui/Button";
 import { Section } from "./ui/Section";
+import { AnimatedBackground } from "./AnimatedBackground";
 
 export function HeroSection() {
   return (
-    <Section className="py-20" id="home">
-      <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
+    <Section className="py-20 relative" id="home">
+      <AnimatedBackground />
+      <div className="flex flex-col items-center text-center max-w-3xl mx-auto relative z-10">
         <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-[var(--text-primary)] tracking-tight leading-tight">
           Membangun Masa Depan Teknologi Komputer Bersama NM Labs
         </h2>

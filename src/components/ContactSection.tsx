@@ -4,7 +4,7 @@ import { Button } from "./ui/Button";
 
 export function ContactSection() {
   return (
-    <Section className="py-20" id="kontak">
+    <Section className="py-20 animated-gradient-bg" id="contact">
       <Container>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-6">Bergabunglah dengan Komunitas Kami</h2>

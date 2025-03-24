@@ -68,7 +68,7 @@ export function Navbar() {
             <button onClick={() => scrollToSection("about")} className="hover:opacity-70">Tentang</button>
             <button onClick={() => scrollToSection("kegiatan")} className="hover:opacity-70">Kegiatan</button>
             <button onClick={() => scrollToSection("proyek")} className="hover:opacity-70">Proyek</button>
-            <button onClick={() => scrollToSection("kontak")} className="hover:opacity-70">Kontak</button>
+            <button onClick={() => scrollToSection("contact")} className="hover:opacity-70">Kontak</button>
           </div>
         </div>
       </Container>
@@ -122,7 +122,7 @@ export function Navbar() {
                 Proyek
               </button>
               <button 
-                onClick={() => scrollToSection("kontak")}
+                onClick={() => scrollToSection("contact")}
                 className="text-lg font-medium hover:opacity-70 text-left"
               >
                 Kontak

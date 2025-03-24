@@ -11,35 +11,35 @@ export function MembersSection() {
     {
       name: "Budi Santoso, S.Kom.",
       role: "Ketua NM Labs",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       expertise: "Embedded Systems, IoT Architecture",
       description: "Mahasiswa senior Teknik Komputer dengan spesialisasi dalam arsitektur sistem tertanam dan IoT. Memiliki pengalaman sebagai asisten peneliti di Laboratorium Sistem Tertanam IT Del dan magang di Telkom Indonesia."
     },
     {
       name: "Siti Rahma",
       role: "Wakil Ketua & Koordinator Riset",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       expertise: "Robotika, Computer Vision, Machine Learning",
       description: "Peneliti muda dengan fokus pada integrasi computer vision dan robotika. Finalis kompetisi robotika nasional 2023 dan kontributor aktif pada proyek open-source di bidang machine learning untuk embedded systems."
     },
     {
       name: "Andi Wijaya",
       role: "Koordinator Proyek",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       expertise: "Microcontroller, PCB Design",
       description: "Mahasiswa Teknik Komputer angkatan 2021 yang berpengalaman dalam desain PCB dan pemrograman mikrokontroler."
     },
     {
       name: "Diana Putri",
       role: "Koordinator Workshop",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       expertise: "FPGA, Digital Design",
       description: "Mahasiswa Teknik Komputer angkatan 2022 dengan minat khusus pada FPGA dan desain digital."
     },
     {
       name: "Reza Pratama",
       role: "Koordinator Kompetisi",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       expertise: "AI, Machine Learning",
       description: "Mahasiswa Teknik Komputer angkatan 2021 yang fokus pada implementasi AI dan machine learning pada sistem embedded."
     }

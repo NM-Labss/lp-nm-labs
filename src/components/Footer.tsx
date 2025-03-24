@@ -1,7 +1,16 @@
-import Link from "next/link";
+"use client";
 import { Container } from "./ui/Container";
 
 export function Footer() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navbarHeight = 80;
+      const y = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
+      window.scrollTo({top: y, behavior: 'smooth'});
+    }
+  };
+
   return (
     <footer className="py-8 border-t border-[var(--border-color)]">
       <Container>
@@ -10,24 +19,24 @@ export function Footer() {
             © {new Date().getFullYear()} NM Labs. Institut Teknologi Del.
           </p>
           <div className="flex gap-6">
-            <Link 
-              href="#" 
+            <button 
+              onClick={() => scrollToSection("kegiatan")}
               className="text-sm text-[var(--text-tertiary)] hover:text-[var(--text-primary)] transition-colors"
             >
               Kegiatan
-            </Link>
-            <Link 
-              href="#" 
+            </button>
+            <button 
+              onClick={() => scrollToSection("anggota")}
               className="text-sm text-[var(--text-tertiary)] hover:text-[var(--text-primary)] transition-colors"
             >
               Anggota
-            </Link>
-            <Link 
-              href="#" 
+            </button>
+            <button 
+              onClick={() => scrollToSection("kontak")}
               className="text-sm text-[var(--text-tertiary)] hover:text-[var(--text-primary)] transition-colors"
             >
               Kontak
-            </Link>
+            </button>
           </div>
         </div>
       </Container>
