@@ -11,7 +11,7 @@ export function HeroSection() {
           Membangun Masa Depan Teknologi Komputer Bersama NM Labs
         </h2>
         <p className="text-lg sm:text-xl text-[var(--text-secondary)] mb-8 leading-relaxed max-w-2xl">
-          Komunitas inovatif yang menghubungkan mahasiswa Teknik Komputer IT Del dengan industri melalui pembelajaran berbasis proyek, riset kolaboratif, dan pengembangan solusi teknologi terdepan.
+          Komunitas inovatif yang menghubungkan mahasiswa Teknik Komputer IT Del dengan industri melalui pembelajaran berbasis proyek, riset kolaboratif, dan pengembangan solusi teknologi terdepan dan terkini.
         </p>
         <div className="flex gap-4 flex-col sm:flex-row">
           <Button href="#" variant="primary">
