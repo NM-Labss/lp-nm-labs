@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   
   // Prevent scrolling when modal is open
   useEffect(() => {
@@ -17,6 +18,20 @@ export function Navbar() {
       document.body.style.overflow = 'unset';
     };
   }, [isMenuOpen]);
+
+  // Detect scroll for navbar styling
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     setIsMenuOpen(false);
@@ -35,7 +50,13 @@ export function Navbar() {
   };
 
   return (
-    <nav className="py-4 border-b border-[var(--border-color)] fixed top-0 left-0 right-0 bg-[var(--background)] z-40">
+    <nav 
+      className={`py-4 fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+        scrolled 
+          ? 'bg-[var(--background)]/80 backdrop-blur-md border-b border-[var(--border-color)] shadow-sm' 
+          : 'bg-transparent'
+      }`}
+    >
       <Container>
         <div className="flex justify-between items-center">
           <button 
