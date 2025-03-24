@@ -136,7 +136,7 @@ export function TestimonialSection() {
                   <div className="flex flex-col h-full justify-between z-10 relative">
                     <div>
                       <p className="text-xl md:text-2xl leading-relaxed text-[var(--text-secondary)] italic mb-8">
-                        "{testimonials[activeIndex].quote}"
+                        &ldquo;{testimonials[activeIndex].quote}&rdquo;
                       </p>
                     </div>
                     
