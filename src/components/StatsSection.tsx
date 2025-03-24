@@ -1,6 +1,5 @@
 import { Container } from "./ui/Container";
 import { Section } from "./ui/Section";
-import { motion } from "framer-motion";
 
 interface StatProps {
   value: string;
