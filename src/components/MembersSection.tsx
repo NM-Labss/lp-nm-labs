@@ -11,15 +11,15 @@ export function MembersSection() {
       name: "Frengky Soritua Manurung",
       role: "DevOps Engineer",
       image: "https://media.licdn.com/dms/image/v2/D5603AQE2FA_4On2PlA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732696003432?e=1755129600&v=beta&t=aMVdjKVJRePqA6oEqbQdtHgV5N7kccrY584vPvg-VFI",
-      expertise: "-",
-      description: "Desc"
+      expertise: "profesional ctrl + c and ctlr + v",
+      description: "debug undifined is not a function",
     },
         {
       name: "Josua Wire Sembiring",
       role: "Associate Product Manager",
       image: "https://media.licdn.com/dms/image/v2/D4E03AQGmBVV4TSQG6Q/profile-displayphoto-shrink_400_400/B4EZZQvxJHHEAg-/0/1745111422463?e=1755129600&v=beta&t=p8Wh0cYJwhvYh4huFfbMGquylP9Z79NXdUBz3wV5Ii0",
-      expertise: "-",
-      description: "Desc"
+      expertise: "yapping soal infra + pm",
+      description: "sifu ngapain sifu"
     },
     {
       name: "Haratama Felix Tamba",
@@ -39,7 +39,7 @@ export function MembersSection() {
       name: "Joe Manurung",
       role: "Network Engineer",
       image: "https://media.licdn.com/dms/image/v2/D5635AQF3UGrJJiqhQQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1729306065985?e=1750233600&v=beta&t=yDm5N_f0pW33jIjBOYSQgS5FcoLJpWn9zHngzMdetVo",
-      expertise: "-",
+      expertise: "",
       description: "Desc"
     },
     {
