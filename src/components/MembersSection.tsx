@@ -59,7 +59,7 @@ export function MembersSection() {
     {
       name: "Albert Panggabean",
       role: "Engineer",
-      image: "",
+      image: "https://media.licdn.com/dms/image/v2/D5603AQEs5NZPUDYBkg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709714522168?e=1755129600&v=beta&t=fv9RGhPi8-TpLR0qYOLsX77jAXvhhUnoqt43Ml506u8",
       expertise: "-",
       description: "Desc"
     }
