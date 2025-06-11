@@ -56,6 +56,13 @@ export function MembersSection() {
       expertise: "-",
       description: "Desc"
     },
+    {
+      name: "Albert Panggabean",
+      role: "Engineer",
+      image: "",
+      expertise: "-",
+      description: "Desc"
+    }
   ];
   
   const [currentIndex, setCurrentIndex] = useState(0);
