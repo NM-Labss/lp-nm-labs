@@ -16,7 +16,7 @@ export function MembersSection() {
     },
         {
       name: "Josua Wire Sembiring",
-      role: "Associate Product Manager",
+      role: "Product Manager",
       image: "https://media.licdn.com/dms/image/v2/D4E03AQGmBVV4TSQG6Q/profile-displayphoto-shrink_400_400/B4EZZQvxJHHEAg-/0/1745111422463?e=1755129600&v=beta&t=p8Wh0cYJwhvYh4huFfbMGquylP9Z79NXdUBz3wV5Ii0",
       expertise: "yapping soal infra + pm",
       description: "sifu ngapain sifu"
