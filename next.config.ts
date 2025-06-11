@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
-    domains: ['images.unsplash.com'],
+    domains: ['images.unsplash.com', 'nm-card.netlify.app'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'media.licdn.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'nm-card.netlify.app',
         pathname: '/**',
       },
       {

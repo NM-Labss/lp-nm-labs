@@ -6,42 +6,62 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export function MembersSection() {
-  // Data anggota tetap sama
   const members = [
     {
-      name: "Budi Santoso, S.Kom.",
-      role: "Ketua NM Labs",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      expertise: "Embedded Systems, IoT Architecture",
-      description: "Mahasiswa senior Teknik Komputer dengan spesialisasi dalam arsitektur sistem tertanam dan IoT. Memiliki pengalaman sebagai asisten peneliti di Laboratorium Sistem Tertanam IT Del dan magang di Telkom Indonesia."
+      name: "Frengky Soritua Manurung",
+      role: "DevOps Engineer",
+      image: "https://media.licdn.com/dms/image/v2/D5603AQE2FA_4On2PlA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732696003432?e=1755129600&v=beta&t=aMVdjKVJRePqA6oEqbQdtHgV5N7kccrY584vPvg-VFI",
+      expertise: "profesional ctrl + c and ctlr + v",
+      description: "debug undifined is not a function",
+    },
+        {
+      name: "Josua Wire Sembiring",
+      role: "Product Manager",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQGmBVV4TSQG6Q/profile-displayphoto-shrink_400_400/B4EZZQvxJHHEAg-/0/1745111422463?e=1755129600&v=beta&t=p8Wh0cYJwhvYh4huFfbMGquylP9Z79NXdUBz3wV5Ii0",
+      expertise: "yapping soal infra + pm",
+      description: "sifu ngapain sifu"
     },
     {
-      name: "Siti Rahma",
-      role: "Wakil Ketua & Koordinator Riset",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      expertise: "Robotika, Computer Vision, Machine Learning",
-      description: "Peneliti muda dengan fokus pada integrasi computer vision dan robotika. Finalis kompetisi robotika nasional 2023 dan kontributor aktif pada proyek open-source di bidang machine learning untuk embedded systems."
+      name: "Haratama Felix Tamba",
+      role: "Information Technology Staff",
+      image: "https://media.licdn.com/dms/image/v2/D5603AQGq9tLAokr3lA/profile-displayphoto-shrink_400_400/B56ZddTdvTGQAg-/0/1749617107272?e=1755129600&v=beta&t=QFrEID_EAX1nGuWf4OAhmOCjg2r3bpUbTAxIuwz44A4",
+      expertise: "-",
+      description: "Desc"
     },
     {
-      name: "Andi Wijaya",
-      role: "Koordinator Proyek",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      expertise: "Microcontroller, PCB Design",
-      description: "Mahasiswa Teknik Komputer angkatan 2021 yang berpengalaman dalam desain PCB dan pemrograman mikrokontroler."
+      name: "Andreas Arta Putra Manik",
+      role: "Server Engineer",
+      image: "https://media.licdn.com/dms/image/v2/D5635AQEmPhjhNR8d2Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1725094776886?e=1750233600&v=beta&t=1Oe9N8-aoRFZqxRiwVBh_2Qy1tv84lGKu6rrT8omfyY",
+      expertise: "-",
+      description: "Desc"
     },
     {
-      name: "Diana Putri",
-      role: "Koordinator Workshop",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      expertise: "FPGA, Digital Design",
-      description: "Mahasiswa Teknik Komputer angkatan 2022 dengan minat khusus pada FPGA dan desain digital."
+      name: "Joe Manurung",
+      role: "Network Engineer",
+      image: "https://media.licdn.com/dms/image/v2/D5635AQF3UGrJJiqhQQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1729306065985?e=1750233600&v=beta&t=yDm5N_f0pW33jIjBOYSQgS5FcoLJpWn9zHngzMdetVo",
+      expertise: "",
+      description: "Desc"
     },
     {
-      name: "Reza Pratama",
-      role: "Koordinator Kompetisi",
-      image: "https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      expertise: "AI, Machine Learning",
-      description: "Mahasiswa Teknik Komputer angkatan 2021 yang fokus pada implementasi AI dan machine learning pada sistem embedded."
+      name: "Maruli Tua Panjaitan",
+      role: "Engineer",
+      image: "https://media.licdn.com/dms/image/v2/D5603AQHpmSt-dgJFhQ/profile-displayphoto-shrink_400_400/B56ZcgzHXFHoAg-/0/1748601960887?e=1755129600&v=beta&t=XJU85NVodX-9q_WtW9ufo_DpXxdY6yLX2Iu3a8424w8",
+      expertise: "-",
+      description: "Desc"
+    },
+    {
+      name: "Naek Benhoven Butarbutar",
+      role: "IT Engineer",
+      image: "https://media.licdn.com/dms/image/v2/D5635AQF68UMOdJ8yRg/profile-framedphoto-shrink_400_400/B56ZZw.mY0GkAg-/0/1745652180890?e=1750233600&v=beta&t=32V4zf8BxjkRR_jXBFEAOM1wTOlqCqRacYvlehO9W1I",
+      expertise: "-",
+      description: "Desc"
+    },
+    {
+      name: "Albert Panggabean",
+      role: "Engineer",
+      image: "https://media.licdn.com/dms/image/v2/D5603AQEs5NZPUDYBkg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709714522168?e=1755129600&v=beta&t=fv9RGhPi8-TpLR0qYOLsX77jAXvhhUnoqt43Ml506u8",
+      expertise: "-",
+      description: "Desc"
     }
   ];
   
@@ -96,7 +116,7 @@ export function MembersSection() {
   return (
     <Section className="py-20 bg-[var(--background)]" id="anggota">
       <Container>
-        <h2 className="text-2xl font-bold mb-10 text-center">Anggota Inti NM Labs</h2>
+        <h2 className="text-4xl font-bold mb-4 text-center mb-20 text-[var(--text-primary)]">Anggota Inti NM Labs</h2>
         
         <div className="relative">
           {/* Navigation buttons */}

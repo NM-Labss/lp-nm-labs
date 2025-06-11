@@ -135,7 +135,7 @@ export function ProjectsSection() {
         
         <div className="mt-16 flex justify-center">
           <Button 
-            href="/projects" 
+            href="/" 
             variant="primary" 
             className="px-8 py-3 text-base group hover:shadow-lg hover:shadow-[var(--primary)]/20 transition-all"
           >
