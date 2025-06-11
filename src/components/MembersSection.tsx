@@ -15,7 +15,7 @@ export function MembersSection() {
       description: "debug undifined is not a function",
     },
         {
-      name: "Josua Wire Sembiring",
+      name: "Josua Wira Sembiring",
       role: "Product Manager",
       image: "https://media.licdn.com/dms/image/v2/D4E03AQGmBVV4TSQG6Q/profile-displayphoto-shrink_400_400/B4EZZQvxJHHEAg-/0/1745111422463?e=1755129600&v=beta&t=p8Wh0cYJwhvYh4huFfbMGquylP9Z79NXdUBz3wV5Ii0",
       expertise: "yapping soal infra + pm",
@@ -25,8 +25,8 @@ export function MembersSection() {
       name: "Haratama Felix Tamba",
       role: "Information Technology Staff",
       image: "https://media.licdn.com/dms/image/v2/D5603AQGq9tLAokr3lA/profile-displayphoto-shrink_400_400/B56ZddTdvTGQAg-/0/1749617107272?e=1755129600&v=beta&t=QFrEID_EAX1nGuWf4OAhmOCjg2r3bpUbTAxIuwz44A4",
-      expertise: "-",
-      description: "Desc"
+      expertise: "jarkom all role",
+      description: "hari hari jumpa thinkpad"
     },
     {
       name: "Andreas Arta Putra Manik",
